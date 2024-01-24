@@ -1,0 +1,5 @@
+pypiwin32
+selenium
+pythonping
+webdriver_manager
+pyinstaller
