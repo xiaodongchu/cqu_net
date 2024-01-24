@@ -6,7 +6,6 @@
 """
 
 import sys
-import os
 import threading
 from time import sleep
 from random import choice
@@ -22,7 +21,6 @@ from selenium.webdriver.common.by import By
 from config import *
 
 
-driver_path = os.path.dirname(__file__)+"/chromedriver.exe"
 url = "http://10.254.7.4"
 log_out_url = "http://10.254.7.4:801/eportal/portal/logout"
 looptime = 30
@@ -34,7 +32,7 @@ log_out_path = "//*[@id=\"edit_body\"]/div[2]/div[2]/form/input"
 
 def get_driver():
     options = Options()
-    service = Service(driver_path)
+    service = Service(chrome_driver_path)
     service.creation_flags = CREATE_NO_WINDOW
     options.add_argument('--disable-extensions')
     options.add_argument("--disable-gpu")
