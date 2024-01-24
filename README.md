@@ -12,6 +12,10 @@ pip install -r requirements.txt
 
 ### 下载chromedriver
 
+```bash
+# 由于网络原因，在中国大陆，可能需要另寻下载方法
+```
+
 - 运行update.py
 - 更新chrome浏览器后，再次运行update.py即可
 
@@ -35,6 +39,6 @@ pip install -r requirements.txt
 ```bash
 # 推荐在conda或venv等虚拟环境中运行，否则可能导致打包过大。
 # 推荐使用字母a开头的名称，若遇到问题，在任务管理器中可以轻松找到，并强制停止运行。
-pyinstaller --name=anetwork anetwork.py -w -F # -i net.ico # （可选）定制图标
+pyinstaller --name=anet net.py -w -F # -i net.ico # （可选）定制图标
 ```
 
